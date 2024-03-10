@@ -1,0 +1,562 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --green: #1450a3;
+  --black: #444;
+  --red: #ef4040;
+  --light-color: #777;
+  --box-shadow: 8px 8px 0 rgba(22, 160, 133, 0.2);
+  --text-shadow: 6px 6px 0 rgba(0, 0, 0, 0.2);
+  --border: 3px solid var(--green);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: all 0.2s ease-out;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  padding-left: 1rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  color: var(--green);
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+
+.btn span {
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  background: var(--green);
+  color: #fff;
+  margin-left: 0.5rem;
+}
+
+.btn:hover {
+  background-color: var(--green);
+  color: #fff;
+}
+
+.btn:hover span {
+  background-color: #fff;
+  color: var(--green);
+  margin-left: 1rem;
+}
+
+.header {
+  padding: 2rem 9%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.header .logo {
+  font-size: 2.5rem;
+  color: var(--green);
+  font-weight: 500;
+}
+
+.header .logo i {
+  color: var(--green);
+}
+
+.header .navbar a {
+  font-size: 1.7rem;
+  color: var(--light-color);
+  margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+  color: var(--green);
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  border-radius: 0.5rem;
+  background: #eee;
+  color: var(--green);
+  padding: 1rem 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* home section */
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 10rem;
+}
+
+.home .image {
+  margin-top: 100px;
+  flex: 1 1 45rem;
+}
+
+.home .image img {
+  width: 600px;
+  height: 500px;
+}
+
+.home .content {
+  flex: 1 1 45rem;
+}
+
+.home .content .first {
+  font-size: 4.5rem;
+  margin-left: 100px;
+  color: var(--red);
+  line-height: 1.8;
+}
+
+.home .content .second {
+  font-size: 4.5rem;
+  margin-left: 170px;
+  color: var(--red);
+  line-height: 1.8;
+}
+
+.home .content .contact {
+  margin-top: 50px;
+  margin-left: 400px;
+}
+
+/*services */
+.services {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.services h1 {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.services h1 span {
+  color: var(--green);
+  margin-left: 15px;
+}
+
+.services .servicebox {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  padding-left: 50px;
+}
+
+.services .servicebox .servicecard {
+  width: 325px;
+  height: 480px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.services .servicebox .servicecard .serviceimage {
+  width: 300px;
+  height: 240px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.services .servicebox .servicecard .serviceimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.2s;
+}
+
+.services .servicebox .servicecard .serviceimage:hover img {
+  transform: scale(1.1);
+}
+
+.services .servicebox .servicecard .serviceinfo h2 {
+  width: 60%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-size: 17px;
+  color: var(--red);
+}
+.services .servicebox .servicecard .serviceinfo p {
+  text-align: center;
+  margin-top: 8px;
+  line-height: 21px;
+  font-size: 12px;
+}
+
+.services .servicebox .servicecard .serviceinfo .servicebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: azure;
+  background-color: #618fcf;
+  padding: 8px 10px;
+  margin: 0 100px;
+  border-radius: 80px;
+  margin-top: 40px;
+  transition: 0.2s;
+}
+.services .servicebox .servicecard .serviceinfo .servicebtn:hover {
+  background-color: azure;
+  color: #618fcf;
+  border: solid 1px rgb(74, 126, 128);
+}
+.services .servicebox .servicecard .serviceinfo .servicebtn h3 {
+  font-size: 15px;
+}
+
+/* About */
+.about h1 {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: var(--green);
+}
+
+.about h1 span {
+  margin-left: 15px;
+  color: var(--black);
+}
+
+.about .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.about .row .image {
+  flex: 1 1 45rem;
+}
+
+.about .row .image img {
+  width: 100%;
+}
+
+.about .row .content {
+  padding-left: 70px;
+  flex: 1 1 45rem;
+}
+
+.about .row .content h3 {
+  color: var(--black);
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.about .row .content p {
+  color: var(--light-color);
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  line-height: 1.8;
+}
+
+/*gallery */
+.gallery {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.gallery h1 {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery h1 span {
+  margin-left: 15px;
+  color: var(--green);
+}
+
+.gallery .galleryimagebox {
+  padding-top: 50px;
+  width: 95%;
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.gallery .galleryimagebox .galleryimage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+}
+.gallery .galleryimagebox .galleryimage img {
+  width: 320px;
+  height: 320px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.gallery .galleryimagebox .galleryimage:hover img {
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 20px;
+  box-shadow: 0 32 75px rgba(29, 26, 26, 0.2);
+}
+
+/* staffs */
+.staffs {
+  width: 100%;
+  padding: 70px 0;
+}
+
+.staffs h1 {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  color: var(--green);
+}
+
+.staffs h1 span {
+  color: var(--black);
+  margin-left: 15px;
+}
+.staffs .staffbox {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  gap: 40px;
+  padding-left: 50px;
+  justify-content: center;
+}
+
+.staffs .staffbox .staffcard {
+  width: 325px;
+  height: 380px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.staffs .staffbox .staffcard .staffimage {
+  width: 300px;
+  height: 240px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.staffs .staffbox .staffcard .staffimage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.2s;
+}
+
+.staffs .staffbox .staffcard .staffimage:hover img {
+  transform: scale(1.1);
+}
+
+.staffs .staffbox .staffcard .staffinfo h2 {
+  width: 60%;
+  text-align: center;
+  margin: 10px auto 10px auto;
+  font-size: 17px;
+  color: var(--black);
+}
+.staffs .staffbox .staffcard .staffinfo p {
+  text-align: center;
+  margin-top: 8px;
+  line-height: 21px;
+  font-size: 18px;
+  color: var(--red);
+}
+
+/* footer */
+.footer {
+  background-color: #bec5d0;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 30px;
+}
+
+.footer .box-container .box {
+  display: block;
+}
+
+.footer .box-container .box i {
+  padding-right: 0.5rem;
+  color: var(--green);
+}
+
+.footer .box-container .box .texts {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1381px) and (max-width: 1527px) {
+  .home .content .first {
+    margin-left: 60px;
+  }
+  .home .content .second {
+    margin-left: 100px;
+  }
+  .home .content .contact {
+    margin-left: 200px;
+  }
+}
+@media (max-width: 1371px) {
+  .services .servicebox {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .services .servicebox .servicecard {
+    width: calc(50% - 20px);
+  }
+  @media (max-width: 1371px) {
+    .gallery .galleryimagebox {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+@media (min-width: 1313px) and (max-width: 1381px) {
+  .home .content .first {
+    margin-left: 50px;
+    font-size: 4rem;
+  }
+  .home .content .second {
+    margin-left: 90px;
+    font-size: 4rem;
+  }
+  .home .content .contact {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 1104px) {
+  .staffs .staffbox {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .staffs .staffbox .staffcard {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+  .home .content .first {
+    margin-left: 70px;
+  }
+  .home .content .second {
+    margin-left: 100px;
+  }
+  .home .content .contact {
+    margin-left: 200px;
+  }
+  section {
+    padding: 1.5rem;
+  }
+  .gallery .galleryimagebox {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 869px) {
+  #menu-btn {
+    display: initial;
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 115%;
+    right: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    width: 30rem;
+    background: #fff;
+    transform: scale(0);
+    opacity: 0;
+    transform-origin: top right;
+    transition: none;
+  }
+
+  .header .active {
+    transform: scale(1);
+    opacity: 1;
+    transition: 0.2s ease-out;
+  }
+
+  .header .navbar a {
+    font-size: 2rem;
+    display: block;
+    margin: 2.5rem;
+  }
+  .gallery .galleryimagebox {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 733px) {
+  .services .servicebox .servicecard {
+    width: 100%;
+  }
+
+  .staffs .staffbox .staffcard {
+    width: 100%;
+  }
+
+  .gallery .galleryimagebox {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}
