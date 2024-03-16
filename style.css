@@ -80,7 +80,7 @@ section {
 
 .header .logo {
   font-size: 2.5rem;
-  color: var(--green);
+  color: var(--red);
   font-weight: 500;
 }
 
@@ -118,36 +118,18 @@ section {
 }
 
 .home .image {
-  margin-top: 100px;
+  margin-top: 10px;
   flex: 1 1 45rem;
 }
 
 .home .image img {
-  width: 600px;
-  height: 500px;
-}
-
-.home .content {
-  flex: 1 1 45rem;
-}
-
-.home .content .first {
-  font-size: 4.5rem;
-  margin-left: 100px;
-  color: var(--red);
-  line-height: 1.8;
-}
-
-.home .content .second {
-  font-size: 4.5rem;
-  margin-left: 170px;
-  color: var(--red);
-  line-height: 1.8;
+  width: 900px;
+  height: 600px;
 }
 
 .home .content .contact {
   margin-top: 50px;
-  margin-left: 400px;
+  margin-left: 10px;
 }
 
 /*services */
@@ -242,6 +224,9 @@ section {
 }
 
 /* About */
+.about {
+  padding: 80px;
+}
 .about h1 {
   font-size: 40px;
   display: flex;
